@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <title>Nurse page</title>
+</head>
+<body>
+<div class="container nurse-page">
+    <div class="nurse">
+        <div class="nurse__in popup-wrapper">
+            <div class="nurse-col nurse-col--left">
+                <div class="datetime datetime1">
+                    <div class="time-hm">21:45</div>
+                    <div class="date-sd">
+                        <div class="date-dn">Пн<span>,</span></div>
+                        <div class="seconds">37</div>
+                        <div class="date-md">Февраль 24</div>
+                    </div>
+                </div>
+                <div data-popup-text='Используя данное окно вы можете добавлять новые напоминания'
+                     data-popup-position="top-left"
+                     data-popup-index="7"
+                     class="reminder-item-wrap scrolled">
+                    <div class="reminder-item">
+                        <span class="reminder-item__num">1</span>
+                        <div class="reminder-item__info">
+                            <h4 class="reminder-item__title">Напоминание №1</h4>
+                            <p class="reminder-item__descr">Детали напоминания</p>
+                        </div>
+                        <div class="reminder-item__right">
+                            <span class="reminder-item__time">20:15</span>
+                            <div class="reminder-item__btn">
+                                <button class="btn btn-rem btn-rem--delete">Удал</button>
+                                <button class="btn btn-rem btn-rem--create">Вып</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reminder-item">
+                        <span class="reminder-item__num">2</span>
+                        <div class="reminder-item__info">
+                            <h4 class="reminder-item__title">Напоминание №1</h4>
+                            <p class="reminder-item__descr">Детали напоминания</p>
+                        </div>
+                        <div class="reminder-item__right">
+                            <span class="reminder-item__time">19:47</span>
+                            <div class="reminder-item__btn">
+                                <button class="btn btn-rem btn-rem--delete">Удал</button>
+                                <button class="btn btn-rem btn-rem--create">Вып</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reminder-item">
+                        <span class="reminder-item__num">3</span>
+                        <div class="reminder-item__info">
+                            <h4 class="reminder-item__title">Напоминание №1</h4>
+                            <p class="reminder-item__descr">Детали напоминания</p>
+                        </div>
+                        <div class="reminder-item__right">
+                            <span class="reminder-item__time">19:05</span>
+                            <div class="reminder-item__btn">
+                                <button class="btn btn-rem btn-rem--delete">Удал</button>
+                                <button class="btn btn-rem btn-rem--create">Вып</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reminder-item">
+                        <span class="reminder-item__num">4</span>
+                        <div class="reminder-item__info">
+                            <h4 class="reminder-item__title">Напоминание №1</h4>
+                            <p class="reminder-item__descr">Детали напоминания</p>
+                        </div>
+                        <div class="reminder-item__right">
+                            <span class="reminder-item__time">17:34</span>
+                            <div class="reminder-item__btn">
+                                <button class="btn btn-rem btn-rem--delete">Удал</button>
+                                <button class="btn btn-rem btn-rem--create">Вып</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reminder-item">
+                        <span class="reminder-item__num">5</span>
+                        <div class="reminder-item__info">
+                            <h4 class="reminder-item__title">Напоминание №1</h4>
+                            <p class="reminder-item__descr">Детали напоминания</p>
+                        </div>
+                        <div class="reminder-item__right">
+                            <span class="reminder-item__time">17:34</span>
+                            <div class="reminder-item__btn">
+                                <button class="btn btn-rem btn-rem--delete">Удал</button>
+                                <button class="btn btn-rem btn-rem--create">Вып</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reminder-item">
+                        <span class="reminder-item__num">6</span>
+                        <div class="reminder-item__info">
+                            <h4 class="reminder-item__title">Напоминание №1</h4>
+                            <p class="reminder-item__descr">Детали напоминания</p>
+                        </div>
+                        <div class="reminder-item__right">
+                            <span class="reminder-item__time">17:34</span>
+                            <div class="reminder-item__btn">
+                                <button class="btn btn-rem btn-rem--delete">Удал</button>
+                                <button class="btn btn-rem btn-rem--create">Вып</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reminder-item layer layer--dis btn">
+                        <div class="layer__top">
+                            <span class="layer__ic"></span>
+                            <div class="layer__name">Добавить напоминание</div>
+                            <button class="layer__btn btn-arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nurse-main">
+                <div class="header-block">
+                    <a
+                        data-popup-text='Используя данное окно вы можете переключится между профилями'
+                        data-popup-position="top-right"
+                        data-popup-index="1"
+                        class="logout">Сменить профиль</a>
+                    <h2 class="header-title">Шевченко Виктория Викторовна</h2>
+                    <h3 class="header-subtitle">Мед-сестра</h3>
+                </div>
+                <div class="content-block">
+                    <h3 class="content-title">Листы назначений для пациента</h3>
+                    <div
+                        data-popup-text='Используя данное окно вы можете просмотреть назначения для пациента'
+                        data-popup-position="bottom-right"
+                        data-popup-index="2"
+                        class="table_wrapper">
+                            <div class="table_container">
+                                <table class="table" id="nurse_table">
+                                    <colgroup>
+                                        <col width="140px">
+                                        <col width="53px">
+                                        <col width="70px">
+                                        <col width="48px">
+                                        <col width="auto">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>Пациент</th>
+                                        <th>Палата</th>
+                                        <th>Поступление</th>
+                                        <th class="p0"></th>
+                                        <th class="p0"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="scrolledBody">
+                                    <tr>
+                                        <td>Чернышевский П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td><span class="btn--table btn--purple">Мед</span></td>
+                                        <td><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td
+                                                data-popup-text='Тут вы сможете просмотреть все медикамены, назначеные пациенту'
+                                                data-popup-position="top-right"
+                                                data-popup-index="3"
+                                                class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td
+                                                data-popup-text='Тут вы сможете просмотреть все исследования, назначеные пациенту'
+                                                data-popup-position="top-right"
+                                                data-popup-index="4"
+                                                class="p0 research-popup"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Петренко П.П.</td>
+                                        <td>№ 27</td>
+                                        <td>24.03.2020</td>
+                                        <td class="p0"><span class="btn--table btn--purple">Мед</span></td>
+                                        <td class="p0"><span class="btn--table btn--lightGreen">Иссл</span></td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nurse-col nurse-col--right ">
+                <div class="nurse-col__in scrolled">
+                    <div class="layer schedule">
+                        <div class="layer__top">
+                            <span class="layer__ic"></span>
+                            <div class="layer__name">График работы</div>
+                            <button class="layer__btn btn-arrow"></button>
+                        </div>
+                        <div class="layer__bottom">
+                            <button class="btn btn-lr schedule__month">
+                                <span class="btn-arrow btn-arrow--dark left"></span>
+                                <span class="btn-lr__name">
+                                    <span class="btn-lr-m"></span>
+                                    <span class="btn-lr-y">2020</span>
+                                </span>
+                                <span class="btn-arrow btn-arrow--dark right"></span>
+                            </button>
+                            <ul class="schedule-list scrolled">
+                                <li class="schedule-list__item">
+                                    <div class="schedule-list__top">
+                                        <div class="day">
+                                            <span class="day__month">Апр</span>
+                                            <span class="day__num">6</span>
+                                        </div>
+                                        <div class="week-day">
+                                            <span class="week-day__name">Понедельник</span>
+                                            <span class="week-day__time">08:00 - 14:00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="schedule-list__item current">
+                                    <div class="schedule-list__top">
+                                        <div class="day">
+                                            <span class="day__month">Апр</span>
+                                            <span class="day__num">7</span>
+                                        </div>
+                                        <div class="week-day">
+                                            <span class="week-day__name">Вторник</span>
+                                            <span class="week-day__time">08:00 - 14:00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="schedule-list__item">
+                                    <div class="schedule-list__top">
+                                        <div class="day">
+                                            <span class="day__month">Апр</span>
+                                            <span class="day__num">8</span>
+                                        </div>
+                                        <div class="week-day">
+                                            <span class="week-day__name">Среда</span>
+                                            <span class="week-day__time">08:00 - 14:00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="schedule-list__item">
+                                    <div class="schedule-list__top">
+                                        <div class="day">
+                                            <span class="day__month">Апр</span>
+                                            <span class="day__num">9</span>
+                                        </div>
+                                        <div class="week-day">
+                                            <span class="week-day__name">Четверг</span>
+                                            <span class="week-day__time">08:00 - 14:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-list__bottom">
+                                        <ul class="schedule-doc">
+                                            <li class="schedule-doc__item">хирург</li>
+                                            <li class="schedule-doc__item">травматолог</li>
+                                            <li class="schedule-doc__item">ЛОР</li>
+                                            <li class="schedule-doc__item">дерматолог</li>
+                                            <li class="schedule-doc__item">стоматолог</li>
+                                            <li class="schedule-doc__item">окулист</li>
+                                            <li class="schedule-doc__item">дерматолог</li>
+                                        </ul>
+                                        <ul class="schedule-doc-name">
+                                            <li class="schedule-doc-name__item"><span>Іваненко І.І.</span><span>Петренко П.П.</span></li>
+                                            <li class="schedule-doc-name__item"><span>Іваненко І.І.</span><span>Петренко П.П.</span></li>
+                                            <li class="schedule-doc-name__item"><span>Іваненко І.І.</span></li>
+                                            <li class="schedule-doc-name__item"><span>Іваненко І.І.</span><span>Петренко П.П.</span></li>
+                                            <li class="schedule-doc-name__item"><span>Іваненко І.І.</span></li>
+                                            <li class="schedule-doc-name__item"><span>Іваненко І.І.</span></li>
+                                            <li class="schedule-doc-name__item"><span>Іваненко І.І.</span><span>Петренко П.П.</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="schedule-list__item">
+                                    <div class="schedule-list__top">
+                                        <div class="day">
+                                            <span class="day__month">Апр</span>
+                                            <span class="day__num">10</span>
+                                        </div>
+                                        <div class="week-day">
+                                            <span class="week-day__name">Пятница</span>
+                                            <span class="week-day__time">08:00 - 14:00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="schedule-list__item">
+                                    <div class="schedule-list__top">
+                                        <div class="day">
+                                            <span class="day__month">Апр</span>
+                                            <span class="day__num">11</span>
+                                        </div>
+                                        <div class="week-day">
+                                            <span class="week-day__name">Суббота</span>
+                                            <span class="week-day__time">08:00 - 14:00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                            data-popup-text='Используя данное окно вы можете добавлять новые напоминания!!!'
+                            data-popup-position="top-right"
+                            data-popup-index="5"
+                            class="layer reminder-add">
+                        <div class="layer__top">
+                            <span class="layer__ic"></span>
+                            <div class="layer__name">Добавить напоминие</div>
+                            <button class="layer__btn btn-arrow"></button>
+                        </div>
+                        <div class="layer__bottom">
+                          <div class="reminder">
+                        		<div class="reminder__descr">
+                        			<span>Описание</span>
+                        			<textarea class="reminder-fields textarea-field" rows="3" cols="2" name="recomend-text" class="" placeholder="Детали напоминания"></textarea>
+                        		</div>
+                            <span>Дата</span>
+                            <div class="reminder__date">
+                              <div class="reminder-fields dropdown" id=''>
+                                <input class="dropdown__field" type="text" name="" value="" id="calendar_input" placeholder="Выберите дату">
+                                <button class="dropdown__btn" type="button" name="button" id="calendar_btn"></button>
+                              </div>
+                            </div>
+                            <span>Время</span>
+                            <div class="reminder-fields timefield">
+                              <input class="timefield__hm" type="text" name="" value="" placeholder="чч">
+                              <span class="timefield__separator">:</span>
+                              <input class="timefield__hm" type="text" name="" value="" placeholder="мм">
+                            </div>
+                            <button class="btn btn--yellow reminder__btn">
+                              Добавить
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div
+                            data-popup-text='Используя данное окно вы можете добавлять новые записи'
+                            data-popup-position="top-right"
+                            data-popup-index="6"
+                            class="layer vidjet-add layer--dis btn">
+                        <div class="layer__top">
+                            <span class="layer__ic"></span>
+                            <div class="layer__name">Добавить виджет</div>
+                            <button class="layer__btn btn-arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="template" id="modal-template">
+    <div class="overlay">
+        <div class="popup__container  popup__container--nurse">
+
+        </div>
+    </div>
+</script>
+
+<script type="template" id="popup-template">
+    <div class="overlay popups">
+        <div class="popup__container ">
+            <div class="dial-window dial-window--msg ">
+                <div class="dial-window__in">
+                    <p class="dial-window__text"></p>
+                    <div class="row dial-window__footer">
+                        <button class="btn btn--lightBlue" id="popupClose">Понятно</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="template" id="medicinesTable">
+    <div class="dialog-wrapper medicines">
+        <div class="table-header">
+            <h3 class="patient">Петренко П.П.</h3>
+            <span class="btn--table btn--purple">Медикаменты</span>
+
+        </div>
+        <div class="table_wrapper">
+            <div class="table-responsive">
+                <table class="table" id="medicines_table">
+                    <colgroup>
+                        <col width="125px">
+                        <col width="55px">
+                        <col width="65px">
+                        <col width="42px">
+                        <col width="55px">
+                        <col width="52px">
+                        <col width="52px">
+                        <col width="52px">
+                        <col width="52px">
+                        <col width="52px">
+                        <col width="52px">
+                        <col width="52px">
+                        <col width="52px">
+                        <col width="52px">
+                        <col width="52px">
+                        <col width="26px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>Название Препарата</th>
+                        <th>Крат. в сутки</th>
+                        <th>Доз. преп.</th>
+                        <th>Фор. вып.</th>
+                        <th>Ед. изм.</th>
+                        <th>20.03</th>
+                        <th>21.03</th>
+                        <th>22.03</th>
+                        <th>23.03</th>
+                        <th>24.03</th>
+                        <th>25.03</th>
+                        <th>26.03</th>
+                        <th>27.03</th>
+                        <th>28.03</th>
+                        <th>29.03</th>
+                        <th class="p0"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="drugs-name" title="Ледокаинdfgsdfbtdthdghdfg">Ледокаинdfgsdfbtdthdghdfg</span></td>
+                        <td>3</td>
+                        <td><span class="drug-dosage drug-dosage--sm">2.0</span></td>
+                        <td>
+                            <div class="drugs drugs--pill">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_pill_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">ЕД</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Нимесил</span></td>
+                        <td>5</td>
+                        <td><span class="drug-dosage drug-dosage--sm">200</span></td>
+                        <td>
+                            <div class="drugs drugs--ampoule">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_ampoule_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">ml</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Спазмалгон</span></td>
+                        <td>7</td>
+                        <td><span class="drug-dosage drug-dosage--sm">500</span></td>
+                        <td>
+                            <div class="drugs drugs--capsule">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_capsule_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">mg</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightCyan">Не вып</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Морфин</span></td>
+                        <td>2</td>
+                        <td><span class="drug-dosage drug-dosage--sm">50</span></td>
+                        <td>
+                            <div class="drugs drugs--system">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_system_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">ml</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Ибупрофен</span></td>
+                        <td>3</td>
+                        <td><span class="drug-dosage drug-dosage--sm">100</span></td>
+                        <td>
+                            <div class="drugs drugs--pill">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_pill_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">mg</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightCyan">Не вып</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Мидазолам</span></td>
+                        <td>5</td>
+                        <td><span class="drug-dosage drug-dosage--sm">3620</span></td>
+                        <td>
+                            <div class="drugs drugs--capsule">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_capsule_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">ЕД</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Диазепам</span></td>
+                        <td>2</td>
+                        <td><span class="drug-dosage drug-dosage--sm">320</span></td>
+                        <td>
+                            <div class="drugs drugs--pill">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_pill_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">ЕД</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightCyan">Не вып</span></td>
+                        <td><span class="btn--table btn--lightCyan">Не вып</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Лоперамид</span></td>
+                        <td>4</td>
+                        <td><span class="drug-dosage drug-dosage--sm">100</span></td>
+                        <td>
+                            <div class="drugs drugs--bottle">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_bottle_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">mg</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightCyan">Не вып</span></td>
+                        <td><span class="btn--table btn--lightCyan">Не вып</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Ледокаин</span></td>
+                        <td>3</td>
+                        <td><span class="drug-dosage drug-dosage--sm">2.0</span></td>
+                        <td>
+                            <div class="drugs drugs--pill">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_pill_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">ЕД</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Нимесил</span></td>
+                        <td>5</td>
+                        <td><span class="drug-dosage drug-dosage--sm">200</span></td>
+                        <td>
+                            <div class="drugs drugs--ampoule">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_ampoule_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">ml</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Спазмалгон</span></td>
+                        <td>7</td>
+                        <td><span class="drug-dosage drug-dosage--sm">500</span></td>
+                        <td>
+                            <div class="drugs drugs--capsule">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_capsule_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">mg</span></td>
+                        <td><span class="btn--table btn--lightGreen">Вып</span></td>
+                        <td><span class="btn--table btn--lightCyan">Не вып</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="drugs-name">Морфин</span></td>
+                        <td>2</td>
+                        <td><span class="drug-dosage drug-dosage--sm">50</span></td>
+                        <td>
+                            <div class="drugs drugs--system">
+                                <svg class="icon"><use xlink:href="images/drug_sprite.svg#icon_drugs_system_hover"></use></svg>
+                            </div>
+                        </td>
+                        <td><span class="unit unit--sm">ml</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td><span class="btn--table btn--purple">Назн</span></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</script>
+
+<script type="template" id="researchTable">
+    <div class="dialog-wrapper research">
+        <div class="table-header">
+            <h3 class="patient">Петренко П.П.</h3>
+
+            <div class="wrapper">
+                <ul class="indicators">
+                    <li class="indic indic-lightCyan">- Не выполнено</li>
+                    <li class="indic indic-lightGreen">- Выполнено</li>
+                    <li class="indic indic-purple">- Назначено</li>
+                </ul>
+                <span class="research-btn btn--table btn--lightGreen">Исследования</span>
+            </div>
+        </div>
+        <div class="table_wrapper">
+            <div class="table-responsive">
+                <table class="table" id="research_table">
+                    <colgroup>
+                        <col width="219px">
+                        <col width="56px">
+                        <col width="54px">
+                        <col width="54px">
+                        <col width="54px">
+                        <col width="54px">
+                        <col width="54px">
+                        <col width="54px">
+                        <col width="54px">
+                        <col width="54px">
+                        <col width="54px">
+                        <col width="26px">
+                    </colgroup>
+                    <thead>
+
+                    <tr>
+                        <th>Исследование</th>
+                        <th>20.03</th>
+                        <th>21.03</th>
+                        <th>22.03</th>
+                        <th>23.03</th>
+                        <th>24.03</th>
+                        <th>25.03</th>
+                        <th>26.03</th>
+                        <th>27.03</th>
+                        <th>28.03</th>
+                        <th>29.03</th>
+                        <th class="p0"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Общий анализ крови</td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">14:30</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">08:20</span></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Печеночные пробы</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">12:10</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">08:20</span></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ирригоскопия</td>
+                        <td><span class="btn--table btn--lightCyan">12:00</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">14:45</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">08:20</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Колоноскопия</td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">08:00</span></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightCyan">12:00</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">09:00</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Соскабливания с языка</td>
+                        <td><span class="btn--table btn--lightGreen">09:45</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightCyan">12:00</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightCyan">12:00</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Электрокардиограмма</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">15:40</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Исследование панкреатической секреции</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">12:10</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Колоноскопия</td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">12:10</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Общий анализ крови</td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">14:30</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">08:20</span></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Печеночные пробы</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">12:10</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">08:20</span></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ирригоскопия</td>
+                        <td><span class="btn--table btn--lightCyan">12:00</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">14:45</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--purple">08:20</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Соскабливания с языка</td>
+                        <td><span class="btn--table btn--lightGreen">09:45</span></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightCyan">12:00</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightCyan">12:00</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Электрокардиограмма</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">15:40</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Исследование панкреатической секреции</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><span class="btn--table btn--lightGreen">12:10</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+<script src="js/libs.min.js"></script>
+<script src='js/components/datepicker.min.js'></script>
+<script src="js/components/OverlayScrollbars.min.js"></script>
+<script src="js/components/CalendarClock.js"></script>
+<script src='js/components/datepicker.min.js'></script>
+<script src="js/nurse.min.js"></script>
+</body>
+</html>

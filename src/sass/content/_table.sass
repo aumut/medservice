@@ -1,0 +1,137 @@
+.table_wrapper
+  background: #ffffff
+  margin: 0 auto
+  //padding: 100px 70px 45px
+  border-radius: 26px
+  z-index: 10
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)
+  overflow: hidden !important
+  max-width: 426px
+  //max-height: 391px
+  max-height: calc(100% - 500px)
+  height: calc(100vh - 470px)
+  border: 2px solid #F9E9BA
+  +laptop
+    max-width: 320px
+    max-height: calc(100vh - 374px)
+  +ipad
+    height: 390px !important
+    max-height: 390px !important
+    //max-width: calc(100% - 9px*2)
+  +phone
+    max-width: calc(100% - 9px*2)
+
+
+.table
+  width: 100%
+  border-spacing: 0
+  text-align: left
+  //table-layout: fixed
+  & thead
+    background: #FFD454
+    tr
+      & th
+        box-sizing: border-box
+        padding: 15px 5px 10px
+        font-weight: 400
+        font-style: normal
+        font-size: 13px
+        line-height: 13px
+        +laptop
+          padding-left: 0px
+          padding-right: 0px
+
+        &:first-child
+          padding-left: 28px
+          border-radius: 26px 0 0
+          +laptop
+            padding-left: 14px
+          +ipad
+            width: 200px !important
+            padding-left: 28px
+          +phone_2
+            width: 140px !important
+            padding-left: 10px
+
+        &:last-child
+          border-radius: 0 26px 0 0
+  & tbody
+    & tr
+      &:nth-child(odd)
+        background: $table-odd-tr-bg
+      & td
+        box-sizing: border-box
+        text-align: left
+        padding: 12px 5px 9px
+        font-family: "FuturaPT-Book"
+        font-weight: 400
+        font-style: normal
+        font-size: 15px
+        line-height: 19px
+        color: $table-body-text
+        min-height: 40px
+
+        +laptop
+          padding-left: 0px
+          padding-right: 0px
+          font-size: 13px
+        +ipad
+          font-size: 15px
+
+        &:first-child
+          padding-left: 28px
+          font-family: 'FuturaPT-Demi'
+          font-weight: 600
+          +laptop
+            padding-left: 13px
+          +ipad
+            padding-left: 28px
+          +phone_2
+            padding-left: 10px
+
+.btn--table
+  border-radius: 50px
+  padding: 4px 12px
+  font-family: "FuturaPT-Book"
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+
+.btn--purple
+  background: $purpleBg
+  color: $purpleColor
+
+.btn--lightGreen
+  background: $lightGreenBg
+  color: $lightGreenColor
+  box-shadow: none
+
+.btn--lightCyan
+  background: $lightCyanBg
+  color: $lightCyanColor
+
+.p0
+  padding: 0
+
+.pl30
+  padding-left: 30px
+
+.table_container
+  position: relative
+  overflow: auto
+  width: 426px
+  //height: 391px
+  height: calc(100vh - 443px)
+  border-radius: 26px
+  -webkit-border-radius: 26px
+  -khtml-border-radius: 26px
+  background: #ffffff
+  +laptop
+    //width: 372px
+    height: calc(100vh - 374px)
+  +ipad
+    //width: 426px
+    //min-width: 100%
+    height: 390px !important
+  +phone
+    width: 400px
+  +phone_2
+    width: 380px

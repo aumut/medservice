@@ -1,0 +1,197 @@
+﻿.nurse-col--right
+  width: 360px
+  min-width: 30.5%
+  background-color: #FFFFFF
+  padding-top: 40px
+  padding-bottom: 57px
+
+  +laptop
+    min-width: 32.5%
+    padding-top: 5px
+    +border-radius-bl(30px)
+    +border-radius-tl(30px)
+
+  +ipad
+    width: 100%
+    min-width: unset
+    padding: 0px
+    background-color: transparent
+
+  .nurse-col__in
+    +scrolled(100%)
+    padding-right: 6px
+    padding-left: 11px
+    padding-top: 10px
+    //padding-bottom: 10px
+    margin-right: 30px
+    +laptop
+      padding-right: 3px
+      padding-left: 9px
+      margin-right: 10px
+      padding-bottom: 30px
+    +ipad
+      padding: 10px 15px 5px
+      margin: 0px -15px
+      overflow: unset
+      height: auto
+      max-height: unset
+
+
+.schedule
+  flex-direction: column
+  padding-left: 0px
+  padding-right: 0px
+  &__in
+    display: flex
+    flex-direction: column
+
+.schedule-list
+  display: flex
+  flex-direction: column
+  list-style: none
+  margin: 0px
+  padding: 0px 5px
+  +scrolled(414px)
+  font-family: $fontFuturaPTBook
+  font-size: 14px
+  color: $blue-light
+
+
+.schedule-list__top
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  background-color: $scheduleItem_bg
+  border-radius: 5px
+  min-height: 70px
+  padding: 0px 53px
+  border: 1px solid transparent
+  box-sizing: border-box
+
+.schedule-list__item
+  display: flex
+  flex-direction: column
+  //align-items: center
+  //justify-content: flex-start
+  //background-color: $scheduleItem_bg
+  //border-radius: 5px
+  //min-height: 70px
+  //padding: 0px 53px
+  margin-bottom: 5px
+  //border: 1px solid transparent
+  &:last-child
+    margin-bottom: 0px
+  &:nth-child(2n+2)
+    .schedule-list__top
+      background-color: $scheduleItem_odd_bg
+  &.current
+    .schedule-list__top
+      background-color: $scheduleItem_cur_bg
+      color: $blue1
+  &.active
+    position: relative
+    .schedule-list__top
+      background-color: $scheduleItem_sel_bg
+      border-color: #4D83C9
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+      z-index: 2
+    .schedule-list__bottom
+      display: flex
+      z-index: 1
+
+
+
+.day
+  display: flex
+  flex-direction: column
+  padding-right: 18px
+  text-align: center
+  position: relative
+  &__num
+    font-size: 20px
+    line-height: 26px
+
+  &:after
+    content: ''
+    display: inline-block
+    position: absolute
+    top: 6px
+    right: 0px
+    height: 32px
+    border-right: 1px solid #A4ACB9
+
+.week-day
+  display: flex
+  flex-direction: column
+  padding-left: 23px
+
+
+
+
+.btn-lr
+  background: #EEF2FF
+  border: 1px solid #BBCAE4
+  box-sizing: border-box
+  border-radius: 26px
+  min-height: 40px
+  min-width: 260px
+  color: $blue1
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0px auto
+
+.btn-lr__name
+  display: flex
+
+.btn-lr-m
+  margin-right: 10px
+
+.schedule__month
+  margin-bottom: 12px
+  padding: 0px 40px
+
+.schedule-list__bottom
+  display: none
+  position: absolute
+  top: 65px
+  left: 0px
+  background-color: #F9FAFF
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+  border-radius: 5px
+  min-height: 155px
+  padding: 14px 17px 21px 17px
+  border-top-left-radius: 0px
+  border-top-right-radius: 0px
+  margin-bottom: 10px
+  box-sizing: border-box
+  width: 100%
+
+.schedule-doc, .schedule-doc-name
+  list-style: none
+  box-sizing: border-box
+  margin: 0px
+  padding: 0px
+  display: flex
+  flex-direction: column
+  &__item
+    margin-bottom: 2px
+    &:last-child
+      margin-bottom: 0px
+
+.schedule-doc
+  min-width: 80px
+  font-family: $fontFuturaPTDemi
+  padding-right: 5px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 6px
+    right: 0px
+    height: 94%
+    border-right: 1px solid #A4ACB9
+
+
+.schedule-doc-name
+  padding-left: 14px

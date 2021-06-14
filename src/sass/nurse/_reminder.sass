@@ -1,0 +1,215 @@
+.reminder-fields
+  +flexbox
+  +flex-direction(row)
+  +justify-content(center)
+  border: 1px solid  #C3D1FF
+  +box-shadow(inset 0px 1px 8px rgba(131, 131, 131, 0.25))
+  height: 38px
+  +border-radius(8px)
+  margin-right: 6px
+  margin-top: 4px
+  &:hover
+    border: 1px solid #4D83C9
+.dropdown
+  +flexbox
+  +flex-direction(row)
+  +justify-content(center)
+  +align-items(center)
+  width: calc(100% - 45px)
+  padding: 5px 15px
+  &__field
+    display: flex
+    flex-grow: 1
+    border-style: none
+    text-align: left
+    color: #686868
+    margin: 0
+    padding: 0
+    padding-top: 7px
+    font-family: $fontFuturaPTBook
+    font-size: 19px
+    font-weight: normal
+  &__btn
+    display: inline-flex
+    width: 25px
+    height: 80%
+    border-style: none
+    background-color: #ffffff
+    background-image: url('../images/reminder/icon_dropdownbtn.svg')
+    background-repeat: no-repeat
+    background-size: 25px 10px
+    background-position: center center
+    padding: 3px 7px
+    margin: 0
+
+.timefield
+  +flexbox
+  +flex-direction(row)
+  +justify-content(center)
+  +align-items(center)
+  width: 80px
+  margin-bottom: 25px
+  &__hm
+    text-align: center
+    font-weight: normal
+    font-size: 19px
+    border-style: none
+    width: 25px
+    font-family: $fontFuturaPTBook
+    font-size: 19px
+    font-weight: normal
+    padding-top: 7px
+    +laptop
+      padding: 0
+      +placeholder
+        +transform(translateY(4px))
+    +ipad
+      padding: 0
+      +placeholder
+        +transform(translateY(4px))
+  &__separator
+    width: 5px
+    margin: 0px 3px
+
+.reminder
+  width: 93%
+  +flexbox
+  +flex-direction(column)
+  +justify-content(left)
+  background-color: #ffffff
+  margin: 0 20px
+  font-family: $fontFuturaPTBook
+  font-size: 18px
+  font-weight: normal
+  input
+    color: #686868
+    font-family: $fontFuturaPTBook
+    font-size: 19px
+    font-weight: normal
+    +placeholder
+      font-family: $fontFuturaPTBook
+      font-size: 19px
+      font-weight: normal
+      color: #CDCDCD
+  &__descr
+    width: 100%
+    +flexbox
+    +flex-direction(column)
+    +justify-content(left)
+    padding: 0
+    margin: 0
+    position: relative
+    .textarea-field
+      -webkit-appearance: none
+      +flexbox
+      +flex-direction(row)
+      +justify-content(center)
+      margin-top: 4px
+      margin-bottom: 8px
+      margin-left: 0
+      margin-right: 0px
+      width: calc(100% - 51px)
+      //self padding + margin of parent
+      height: 75px
+      padding: 8px 18px
+      color: #686868
+      font-family: $fontFuturaPTBook
+      font-size: 19px
+      font-weight: normal
+      +placeholder
+        color: #CDCDCD
+        position: absolute
+        top: 1px
+        left: 1px
+        text-align: left
+        padding: 8px 0px
+        font-size: 19px
+        +transform(translateY(18px))
+  &__date
+    width: 100%
+    +flexbox
+    +flex-direction(row)
+    +justify-content(left)
+    margin-bottom: 3px
+  &__btn
+    height: 38px
+    width: calc(100% - 13px)
+
+
+//-----------datapicker style-----------
+.reminder
+  .qs-datepicker-container
+    font-family: $fontRobotoMedium!important
+    font-weight: 500!important
+    font-size: 14px!important
+    border: 1px solid #E3E9FF
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15)
+    border-radius: 8px
+    width: 265px
+    top: 50px!important
+    left: -2px!important
+    margin-bottom: 20px
+  .qs-datepicker .qs-controls
+    width: auto!important
+    background: #FFFFFF!important
+    margin: 0px 18px
+    padding: 16px 0px 10px 0px
+    color: #444444!important
+    font-family: $fontRobotoMedium
+    font-weight: 500
+    font-size: 14px
+    border-bottom: 0.6px solid rgba(0, 0, 0, .17)
+  .qs-datepicker .qs-square .qs-day
+    color: rgba(68,68,68, 0.6)
+    font-weight: 500!important
+  .qs-datepicker .qs-squares
+    margin: 0px 18px 18px 18px
+    padding: 8px 0px 0px 0px
+    border-bottom: 0.6px solid rgba(0, 0, 0, .17)
+  .qs-datepicker .qs-square
+    width: 22px!important
+    height: 23px!important
+    margin: 8px 5px
+    border-radius: 50%
+    color: #414141
+    font-family: $fontRobotoMedium
+    font-weight: 500
+    font-size: 14px
+    &.qs-current
+      font-weight: 500!important
+      background: #E6EBFE!important
+      span
+        text-decoration: none
+    &:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active)
+      &:hover
+        background: #2B5D92!important
+        color: #FFFFFF
+  .qs-datepicker .qs-active
+    font-weight: 500
+    color: #FFFFFF
+    background: #2B5D92!important
+  .qs-datepicker .qs-arrow
+    width: 10px
+    height: 10px
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 10px 10px
+    border: none
+    &::after
+      display: none
+    &:hover
+      width: 10px
+      height: 10px
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 10px 10px
+      border: none
+      background-color: #E6EBFE
+  .qs-datepicker .qs-arrow.qs-left
+    background-image: url('../images/reminder/icon_date_left.svg')
+    &::after
+      display: none
+  .qs-datepicker .qs-arrow.qs-right
+    background-image: url('../images/reminder/icon_date_right.svg')
+    &::after
+      display: none

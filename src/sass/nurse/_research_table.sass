@@ -1,0 +1,131 @@
+.dialog-wrapper
+  padding: 67px 79px 34px 83px
+  background: #FFFFFF
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+  border-radius: 26px
+  max-width: 1200px
+  max-height: 500px
+  +laptop
+    padding: 67px 25px 34px 25px
+  +ipad
+    //width: calc(100% - 100px)
+    max-height: 533px
+    width: 700px
+    padding: 32px 15px
+    padding: 40px 25px 70px 25px
+  +phone_1
+    width: calc(100% - 60px)
+  .table-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: #284c8a
+    font-family: "FuturaPT-Book"
+    padding-left: 26px
+    +ipad
+      position: relative
+      flex-direction: column
+      align-items: flex-start
+      padding-left: 0
+    & .patient
+        font-family: 'FuturaPT-Demi'
+        font-size: 24px
+        line-height: 22px
+        font-weight: 600
+    &  .btn--table
+      box-shadow: none
+      font-size: 13px
+    .wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      & .indicators
+        display: flex
+        list-style: none
+        margin-right: 19px
+        +ipad
+          padding-left: 0
+          margin: 10px 0
+        & li
+          margin-right: 10px
+          padding-left: 36px
+          font-size: 13px
+          line-height: 13px
+          position: relative
+          &:before
+            content: ''
+            display: inline-block
+            width: 24px
+            height: 24px
+            border-radius: 50%
+            -webkit-border-radius: 50%
+            -moz-border-radius: 50%
+            position: absolute
+            left: 4px
+            top: -5px
+          &.indic-lightCyan:before
+            background: $lightCyanBg
+          &.indic-lightGreen:before
+            background: $lightGreenBg
+          &.indic-purple:before
+            background: $purpleBg
+          +phone
+            font-size: 10px
+            &:before
+              width: 15px
+              height: 15px
+              left: 15px
+              top: -1px
+.research
+  .table_wrapper
+    max-width: 850px
+    max-height: 391px
+    //+laptop
+      height: calc(100vh - 400px)
+    +ipad
+      height: calc(100vh - 360px)
+    //width: 805px
+    & thead
+      & th
+        text-align: center
+        &:first-child
+          text-align: left
+
+    & tbody
+      tr:last-child
+        margin-bottom: 10px
+      height: 350px
+      & td
+        font-size: 12px
+        line-height: 15px
+        border-right: 1px solid #E8EBFF
+        padding: 8px 3px
+        &:first-child
+          background: #EEF2FF
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1)
+          font-size: 14px
+        &:nth-child(2)
+          padding-left: 6px
+        &:last-child
+          border-right-color: transparent
+
+      & .btn--table
+        padding: 4px 7px
+
+.table-responsive
+  overflow: auto
+  position: relative
+  height: 400px
+  width: 880px
+  +laptop
+    height: calc(100vh - 470px)
+  +ipad
+    width: 750px
+    height: 390px
+    //height: calc(100vh - 360px)
+
+.research-btn
+  +ipad
+    position: absolute
+    right: 0
+    top: 25px

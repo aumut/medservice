@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styleS.min.css">
+	<link rel="stylesheet" href="css/datepicker.min.css">
+	<title>Medical Service</title>
+
+</head>
+<body>
+	<!--           REMINDER           -->
+  <div class="reminder">
+		<div class="reminder__descr">
+			<span>Описание</span>
+				<textarea class="reminder-fields textarea-field" rows="3" cols="2" name="recomend-text" class="" placeholder="Детали напоминания"></textarea>
+		</div>
+    <span>Дата</span>
+    <div class="reminder__date">
+      <div class="reminder-fields dropdown" id=''>
+        <input class="dropdown__field" type="text" name="" value="" id="calendar_input" placeholder="Выберите дату">
+        <button class="dropdown__btn" type="button" name="button" id="calendar_btn"></button>
+      </div>
+    </div>
+    <span>Время</span>
+    <div class="reminder-fields timefield">
+      <input class="timefield__hm" type="text" name="" value="" placeholder="чч">
+      <span class="timefield__separator">:</span>
+      <input class="timefield__hm" type="text" name="" value="" placeholder="мм">
+    </div>
+    <button class="btn btn--yellow reminder__btn">
+      Добавить
+    </button>
+  </div>
+	<!-- - - - - - - - - - - - - - - - --><br><br><br>
+	<div class="auth">
+		<div class="auth_caption">Войти в аккаунт</div>
+		<h4>Номер телефона</h4>
+		<input type="text" class="auth_input" placeholder="+380 XX XXX XXX"/>
+		<h4>Пароль</h4>
+		<input type="text" class="auth_input" placeholder="******"/>
+		<button class="btn btn--yellow auth_btn" type="button" name="button">Войти</button>
+	</div>
+
+	<script src='js/components/datepicker.min.js'></script>
+	<script src='js/nurse.min.js'></script>
+</body>
+</html>
